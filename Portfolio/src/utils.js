@@ -1,7 +1,10 @@
-import eventTracker from "./assets/expense-tracker.jpeg";
-import qtifyImg from "./assets/qtify-image.jpeg";
-import qkartImg from "./assets/qkart-img.jpeg";
-import xboardImg from "./assets/xboard-img.jpeg";
+import expenseTracker from "./assets/expense-tracker.png";
+import qkart from "./assets/qkart.png";
+import qtify from "./assets/qtify.png";
+import qtripDynamic from "./assets/qtrip-dynamic.png";
+import qtripStatic from "./assets/qtrip-static.png";
+import xBoard from "./assets/xboard.png";
+
 
 export const data = {
     intro: "Hi I'm Santosh Bhardwaj, a passionate tech enthusiast actively expanding my expertise in MERN Full Stack development",
@@ -48,7 +51,8 @@ export const projects = [
         title: "A dynamic tracking application",
         skills: ["ReactJs", "Redux Toolkit", "JavaScript", "React Router", "Data Validation", "State Management"],
         description:"",
-        img: eventTracker,
+        img: expenseTracker,
+        link: "https://xpense-tracker-mu.vercel.app/"
     },
     {
         id: "project2",
@@ -57,7 +61,8 @@ export const projects = [
         title: "QTify is a song-browsing application built from scratch using ReactJS",
         skills: ["ReactJs", "Swiper Library usage", "Module-scoped CSS", "Flexbox", "CSS Variables", "Condition Rendering", "Component Reusability", "Material UI", "Customizing Third-Party Components", "Deployment"],
         description:"paired with Material UI and Swiper to deliver a seamless and aesthetic user interface, offering songs from different albums and genres for music lovers.",
-        img: qtifyImg,
+        img: qtify,
+        link: "https://qtify-steel-five.vercel.app/"
     },
     {
         id: "project3",
@@ -89,7 +94,8 @@ export const projects = [
             "Netlify"
           ],
         description:"During the course of this project, Implemented the core logic for authentication, shopping cart and checkout. Improved UI by adding responsive design elements for uniform experience across different devices. Utilized REST APIs to dynamically load and render data served by the backend server",
-        img: qkartImg,
+        img: qkart,
+        link: "https://qkart-frontend-eta-sable.vercel.app/"
     },
     {
         id: "project4",
@@ -115,6 +121,75 @@ export const projects = [
             "Bootstrap Carousel"
         ],
         description:"During the course of this project, built XBoard using HTML, CSS, Bootstrap and JavaScript from scratch. Used Accordions and Image Carousel to improve UI. Fetched news content from flipboard's RSS feed using REST API",
-        img: xboardImg,
+        img: xBoard,
+        link: "https://xboard-newsfeed.vercel.app/"
+    },
+    {
+        id: "project5",
+        project_name: "QTrip Dynamic",
+        date: "Jun 2024",
+        title: "QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities.",
+        skills: [
+            "HTML",
+            "CSS",
+            "ES6",
+            "JavaScript",
+            "Developer Tools",
+            "Bootstrap",
+            "HTTP",
+            "REST",
+            "Responsive Design",
+            "VS Code Live Server",
+            "DOM Manipulation",
+            "cURL",
+            "JSON",
+            "Event Handling",
+            "localStorage",
+            "Conditional Rendering",
+            "Bootstrap Carousel",
+            "Netlify CLI",
+            "Deployment",
+            "Heroku",
+            "Netlify"
+        ],
+        description:"During the course of this project, Created web pages using HTML and CSS and made them dynamic using JavaScript. Improved UX with multi-select filters, image carousels. Utilised localStorage to persist user preferences at client-side",
+        img: qtripDynamic,
+        link: "https://qtrip-dynamic-eta-coral.vercel.app/"
+    },
+    {
+        id: "project6",
+        project_name: "QTrip Static",
+        date: "May 2024",
+        title: "QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities.",
+        skills: [
+            "HTML",
+            "CSS",
+            "Developer Tools",
+            "Bootstrap",
+            "CSS Flexbox",
+            "Responsive Design",
+            "VS Code Live Server",
+            "Bootstrap Responsive Images",
+            "Bootstrap Flex",
+            "Bootstrap Spacing",
+            "Bootstrap Display",
+            "CSS Positioning",
+            "Deployment",
+            "Netlify",
+            "Netlify CLI"
+        ],
+        description:"During the course of this project, Created 3 different web pages from Wireframe layout using HTML and CSS. Utilized Bootstrap extensively for responsive design. Deployed the website to Netlify/Vercel",
+        img: qtripStatic,
+        link: "https://qtrip-static-website.vercel.app/"
+    },
+    {
+        id: "project7",
+        project_name: "XCruise",
+        date: "Apr 2024",
+        title: "XCruise is a responsive static website built from scratch using HTML and CSS to provide a seamless and visually appealing experience for users looking to book cruise vacations.",
+        skills: ["HTML", "CSS", "Response Design"],
+        description:"The project involved developing a responsive and interactive website that showcases various cruise destinations and provides essential information about XCruise offerings.",
+        img: "",
+        link: "https://xcruise-gamma.vercel.app/"
     },
 ]

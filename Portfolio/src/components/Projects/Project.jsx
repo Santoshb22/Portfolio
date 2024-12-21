@@ -2,7 +2,7 @@ import { useCallback, useState } from "react"
 import ProjectCarousel from "./ProjectCarousel"
 
 const Project = () => {
-  const [isCarousel, setIsCarousel] = useState(false);
+  const [isCarousel, setIsCarousel] = useState(true);
   
   const handleCarousel = useCallback(() => {
     setIsCarousel(!isCarousel);

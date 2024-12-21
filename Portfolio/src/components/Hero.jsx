@@ -5,7 +5,7 @@ import profile from "../assets/profile.jpg";
 import heroImg from "../assets/hero-img.jpg";
 const Hero = () => {
   return (
-    <div className="relative flex items-center justify-center gap-4 py-32"
+    <div className="flex items-center justify-center gap-4 py-32"
     style={{ backgroundImage: `url(${heroImg})` }}
     >
         <div className="flex items-center justify-center">
