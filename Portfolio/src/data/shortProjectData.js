@@ -1,51 +1,13 @@
-import expenseTracker from "./assets/expense-tracker.png";
-import qkart from "./assets/qkart.png";
-import qtify from "./assets/qtify.png";
-import qtripDynamic from "./assets/qtrip-dynamic.png";
-import qtripStatic from "./assets/qtrip-static.png";
-import xBoard from "./assets/xboard.png";
-
-
-export const data = {
-    intro: "Hi I'm Santosh Bhardwaj, a passionate tech enthusiast actively expanding my expertise in MERN Full Stack development",
-    bio: "BSC.IT graduate, I'm leveling up to full-stack development with the Crio.Do Fellowship, gaining practical experience in building real-world applications and enhancing my problem-solving skills across frontend and backend technologies. Passionate about building efficient, user-focused applications and eager to contribute to impactful tech solutions.",
-    socialLinks: {
-        linkedin: "https://www.linkedin.com/in/santosh22/",
-        github: "https://github.com/Santoshb22",
-        resume: "https://docs.google.com/document/d/1jksEZb48wAYgpsF0selwq7N5wZ8b95egM52p_ZYcNRs/edit?usp=sharing",
-    },
-    skills: {
-        frontend: [
-          "React",
-          "Next.js",
-          "TypeScript",
-          "JavaScript",
-          "HTML",
-          "CSS",
-          "Tailwind CSS",
-          "Material UI",
-          "Sass",
-          "Bootstrap",
-          "Swiper.js"
-        ],
-        tools: [
-          "Redux Toolkit",
-          "Git",
-          "Figma",
-          "Visual Studio",
-          "Vercel"
-        ],
-        concepts: [
-          "HTTP",
-          " REST"
-        ]
-    },
-    
-}
+import expenseTracker from "../assets/expense-tracker.png";
+import qkart from "../assets/qkart.png";
+import qtify from "../assets/qtify.png";
+import qtripDynamic from "../assets/qtrip-dynamic.png";
+import qtripStatic from "../assets/qtrip-static.png";
+import xBoard from "../assets/xboard.png";
 
 export const projects = [
     {
-        id: "project1",
+        id: "projectnov24",
         project_name: "XPense Tracker",
         date: "Nov 2024",
         title: "A dynamic tracking application",
@@ -55,7 +17,7 @@ export const projects = [
         link: "https://xpense-tracker-mu.vercel.app/"
     },
     {
-        id: "project2",
+        id: "projectaug24",
         project_name: "QTify",
         date: "Aug 2024",
         title: "QTify is a song-browsing application built from scratch using ReactJS",

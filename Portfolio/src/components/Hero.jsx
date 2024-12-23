@@ -1,4 +1,4 @@
-import { data } from "../utils"
+import { data } from "../data/bioData"
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import profile from "../assets/profile.jpg";

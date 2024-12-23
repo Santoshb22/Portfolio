@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router";
+import Skills from "../Skills";
+
 const ProjectCard = ({data}) => {
+  const navigate = useNavigate();
+
   if(!data) return <h1>Loading...</h1>
 
   const handleViewDemo = () => {
@@ -15,15 +20,7 @@ const ProjectCard = ({data}) => {
             <p className="text-gray-500">{data.date}</p>
             <p className="underline mt-2">{data.title}</p>
             <p>{data.description}</p>
-            
-            <div className="flex flex-wrap gap-2 font-semibold mt-2">
-              {data.skills?.map((skill) => (
-                <p key={skill} className="bg-gray-100 px-2 py-1 rounded">
-                  {skill}
-                </p>
-            ))}
-            
-            </div>
+            <Skills skills={data.skills}/>
             <div className="my-4 ">
                 <button 
                 onClick={handleViewDemo}
@@ -31,12 +28,14 @@ const ProjectCard = ({data}) => {
                 >
                   View Demo
                 </button>
-                <button className="bg-blue-300 hover:bg-blue-400 px-4 py-2 rounded-md">View Project Titles</button>
+                <button 
+                onClick={() => navigate(`/project/${data.id}`)}
+                className="bg-blue-300 hover:bg-blue-400 px-4 py-2 rounded-md">View Project Titles</button>
             </div>
         </div>
 
         <div className="flex justify-end">
-            <img className="w-[20vw] h-[20vw] rounded object-fill" src={data.img} alt="project image" />
+            <img className="w-[30vw] h-[20vw] rounded object-fill" src={data.img} alt="project image" />
         </div>
     </div>
   )

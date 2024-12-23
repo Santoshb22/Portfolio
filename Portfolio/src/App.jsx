@@ -1,26 +1,15 @@
-import HomeSection from './components/HomeSection'
-import Navbar from './components/Navbar'
 import "./App.css";
-import SkillsSection from './components/SkillsSection';
-import Project from './components/Projects/Project';
+import { Route, Routes } from 'react-router';
+import Home from './pages/Home';
+import ProjectDetail from './pages/ProjectDetail';
 function App() {
 
   return (
   <div className='App'>
-    <Navbar/>
-    <main className='max-w-full w-[70%] mx-auto'>
-      <section className='section'>
-        <HomeSection/>
-      </section>
-
-      <section className='section'>
-        <SkillsSection/>
-      </section>
-
-      <section>
-        <Project/>
-      </section>
-    </main>
+    <Routes>
+        <Route path='/' element = {<Home/>}/>
+        <Route path='/project/:id' element = {<ProjectDetail/>}/>
+      </Routes>
   </div>
   )
 }

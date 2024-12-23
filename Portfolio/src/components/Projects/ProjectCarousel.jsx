@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { projects } from "../../utils"
+import { projects } from "../../data/shortProjectData"
 import ProjectCard from "./ProjectCard"
 
 const ProjectCarousel = ({isCarousel}) => {

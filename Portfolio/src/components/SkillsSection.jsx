@@ -1,4 +1,4 @@
-import { data } from "../utils"
+import { data } from "../data/bioData";
 const SkillsSection = () => {
   return (
     <div>
