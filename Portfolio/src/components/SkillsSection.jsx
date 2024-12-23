@@ -1,36 +1,21 @@
 import { data } from "../data/bioData";
+import Skills from "./Skills";
 const SkillsSection = () => {
   return (
-    <div>
-        <h2 className="text-4xl font-semibold my-2">Skills</h2>
+    <div id="skills">
+        <h2 className="text-3xl font-semibold my-2">Skills</h2>
 
         <div>
-            <div>
-                <p className="skills">
-                    Frontend Technologies: {
-                    data.skills?.frontend?.map(tech => (
-                    <span className="font-thin" key={tech}>{tech} | </span>
-                    )
-                    )}
-                </p>
+            <div className="skills">
+                {<Skills skills = {data.skills?.frontend} text = {"Frontend Technologies"} seeMoreFeature = {false}/>}
+            </div>
 
-                <p className="skills">
-                    Tools: {
-                        data.skills?.tools?.map(tool => (
-                            <span className="font-thin" key={tool}>{tool} | </span>
-                        ))
-                    }
-                </p>
+            <div className="skills">
+                {<Skills skills = {data.skills?.tools} text = {"Tools"}/>}
+            </div>
 
-                <p className="skills">
-                    Concepts: {
-                        data.skills.concepts.map(concept => (
-                            <span className="font-thin" key={concept}>
-                                {concept} | 
-                            </span>
-                        ))
-                    }
-                </p>
+            <div className="skills">
+                {<Skills skills = {data.skills?.concepts} text = {"Concepts"}/>}
             </div>
         </div>
     </div>

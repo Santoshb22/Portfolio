@@ -7,12 +7,12 @@ const Home = () => {
   return (
     <div>
       <Navbar/>
-      <div className='max-w-full w-[80%] mx-auto'>
-        <section className='section'>
+      <div className='bg-[#F8FAFC] max-w-full w-[80%] mx-auto mt-2'>
+        <section>
             <HomeSection/>
         </section>
 
-        <section className='section'>
+        <section>
             <SkillsSection/>
         </section>
 

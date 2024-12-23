@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router"
 import {projects} from "../data/projectDetails";
-import ProjectDetailHeader from "../components/ProjectDetailHeader";
-import ProjectDetailCard from "../components/ProjectDetailCard";
+import ProjectDetailHeader from "../components/ProjectDetails/ProjectDetailHeader";
+import ProjectDetailCard from "../components/ProjectDetails/ProjectDetailCard";
 import Skills from "../components/Skills";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const ProjectDetail = () => {
   const [projectData, setProjectData] = useState(null);
@@ -29,10 +30,10 @@ const ProjectDetail = () => {
     if(!overview) return <p>No Overview</p>
 
     return (
-      <div className="bg-[#F8FAFC] p-2 rounded-md shadow-md grid gap-3">
+      <div id="overview" className="bg-[#F8FAFC] p-2 rounded-md shadow-md grid gap-3">
         <h3 className="text-2xl font-semibold">Overview</h3>
         <p>{overview.title}</p>
-        <Skills skills={projectData.skills} />
+        <Skills skills={projectData.skills} text = {"Skills"}/>
         <div>
           <p className="font-medium">{overview.desc?.title}: </p>
           <ol className="list-decimal mx-8">
@@ -43,7 +44,7 @@ const ProjectDetail = () => {
                 </li>
               ))
             ) : (
-              <p>No points available</p> // Fallback message
+              <p>No points available</p>
             )}
           </ol>
         </div>
@@ -65,13 +66,17 @@ const ProjectDetail = () => {
         <h1 className="text-center content-center h-[80vh] text-3xl font-semibold">
           Project data not available
         </h1>
-      ) : (
+      ) : ( //sidebar
         <div className="flex mx-20 min-h[100vh] my-4">
-          <div className="md:w-[20%] p-2 fixed">
+          <div className="md:w-[22%] fixed">
             {projectData.details?.topic?.map((topic) => (
-              <a key={topic} className="block mb-4" href="#">
+              <AnchorLink 
+              offset={50} 
+              href={`#${topic.toLowerCase()}`} 
+              key={topic} 
+              className="block mb-4">
                 {topic}
-              </a>
+              </AnchorLink>
             ))}
           </div>
 

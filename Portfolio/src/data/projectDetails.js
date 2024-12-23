@@ -25,7 +25,7 @@ export const projects = [
             },
             details: [
                 {
-                    id: "Build XPenseTracker",
+                    id: "BuildXPenseTracker",
                     title: "Build XPenseTracker",
                     scope: [
                         "Global State with Redux Toolkit: Used slices like userSlice, expenseSlice, and transactionSlice to manage user data, budgets, and transactions.",
@@ -78,7 +78,7 @@ export const projects = [
             },
             details: [
                 {
-                    id: "Build QTify",
+                    id: "BuildQTify",
                     title: "Build QTify",
                     scope: [
                         "Analyzed the Figma design to identify and document necessary front-end components.",

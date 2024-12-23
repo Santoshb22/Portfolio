@@ -2,11 +2,16 @@ import { data } from "../data/bioData"
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import profile from "../assets/profile.jpg";
-import heroImg from "../assets/hero-img.jpg";
+import heroImg from "../assets/hero_img.jpg";
 const Hero = () => {
   return (
     <div className="flex items-center justify-center gap-4 py-32"
-    style={{ backgroundImage: `url(${heroImg})` }}
+    style={{
+        backgroundImage: `url(${heroImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat",
+      }}
     >
         <div className="flex items-center justify-center">
             <img className="w-44 rounded-full" src={profile} alt="profile-img" />

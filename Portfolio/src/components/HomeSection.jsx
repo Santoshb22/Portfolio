@@ -2,7 +2,7 @@ import { data } from "../data/bioData"
 import Hero from "./Hero"
 const HomeSection = () => {
   return (
-    <div>
+    <div id="home">
         <Hero/>
 
         <div className="my-10">

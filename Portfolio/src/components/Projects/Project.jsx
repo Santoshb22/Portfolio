@@ -9,7 +9,7 @@ const Project = () => {
   }, [isCarousel]);
 
   return (
-    <div className="my-10">
+    <div id="projects" className="my-10 mr-8">
         <div className="flex items-end justify-between">
         <h2 className="text-4xl font-semibold mb-4">Projects</h2>
         <button

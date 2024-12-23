@@ -14,13 +14,13 @@ const ProjectCard = ({data}) => {
     }
   }
   return (
-    <div className="grid grid-cols-2 bg-blue-50 p-2">
+    <div className="grid md:grid-cols-2 bg-[#F8FAFC] p-2 shadow-md">
         <div className="flex flex-col gap-1">
             <p className="font-semibold text-xl">{data.project_name}</p>
             <p className="text-gray-500">{data.date}</p>
             <p className="underline mt-2">{data.title}</p>
             <p>{data.description}</p>
-            <Skills skills={data.skills}/>
+            <Skills skills={data.skills} text = {"Skills"}/>
             <div className="my-4 ">
                 <button 
                 onClick={handleViewDemo}
@@ -34,8 +34,8 @@ const ProjectCard = ({data}) => {
             </div>
         </div>
 
-        <div className="flex justify-end">
-            <img className="w-[30vw] h-[20vw] rounded object-fill" src={data.img} alt="project image" />
+        <div className="flex md:justify-end">
+            <img className="w-[40vw] md:w-[30vw] h-[25vw] md:h-[20vw] rounded object-fill" src={data.img} alt="project image" />
         </div>
     </div>
   )
