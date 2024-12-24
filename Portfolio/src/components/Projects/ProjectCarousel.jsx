@@ -20,7 +20,7 @@ const ProjectCarousel = ({isCarousel}) => {
 
       {isCarousel && <button 
         onClick={handlePrevBtn}
-        className="hover:bg-gray-50 text-4xl bg-gray-100">{"<"}
+        className="dark:bg-[#212121] hover:bg-gray-50 rounded-md text-4xl bg-gray-100">{"<"}
         </button>}
 
         {isCarousel? 
@@ -39,7 +39,7 @@ const ProjectCarousel = ({isCarousel}) => {
 
         {isCarousel && <button 
         onClick={handleNextBtn}
-        className="hover:bg-gray-50 text-4xl bg-gray-100">
+        className="dark:bg-[#212121] rounded-md hover:bg-gray-50 text-4xl bg-gray-100">
           {">"}
         </button>}
     </div>

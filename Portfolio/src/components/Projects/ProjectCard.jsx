@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import Skills from "../Skills";
+import Button from "../Button"
 
 const ProjectCard = ({data}) => {
   const navigate = useNavigate();
@@ -13,8 +14,13 @@ const ProjectCard = ({data}) => {
       alert("Demo link not availabe");
     }
   }
+
+  const handleNavigateToProject = (id) => {
+    navigate(`/project/${id}`)
+  }
+
   return (
-    <div className="grid md:grid-cols-2 bg-[#F8FAFC] p-2 shadow-md">
+    <div className="dark:bg-[#212121] dark:text-white rounded-md grid md:grid-cols-2 bg-[#F8FAFC] p-2 my-2 shadow-md">
         <div className="flex flex-col gap-1">
             <p className="font-semibold text-xl">{data.project_name}</p>
             <p className="text-gray-500">{data.date}</p>
@@ -22,15 +28,13 @@ const ProjectCard = ({data}) => {
             <p>{data.description}</p>
             <Skills skills={data.skills} text = {"Skills"}/>
             <div className="my-4 ">
-                <button 
-                onClick={handleViewDemo}
-                className="bg-blue-300 hover:bg-blue-400 px-4 py-2 mr-2 rounded-md"
-                >
+                <Button onClick={handleViewDemo}>
                   View Demo
-                </button>
-                <button 
-                onClick={() => navigate(`/project/${data.id}`)}
-                className="bg-blue-300 hover:bg-blue-400 px-4 py-2 rounded-md">View Project Titles</button>
+                </Button>
+                
+                <Button onClick={() => handleNavigateToProject(data.id)}>
+                View Project Titles
+                </Button>
             </div>
         </div>
 

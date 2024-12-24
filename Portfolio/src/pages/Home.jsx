@@ -5,9 +5,7 @@ import SkillsSection from "../components/SkillsSection"
 
 const Home = () => {
   return (
-    <div>
-      <Navbar/>
-      <div className='bg-[#F8FAFC] max-w-full w-[80%] mx-auto mt-2'>
+    <div className='dark:bg-[#323232] dark:text-white p-2 bg-[#F8FAFC] max-w-full w-[80%] mx-auto'>
         <section>
             <HomeSection/>
         </section>
@@ -19,7 +17,6 @@ const Home = () => {
         <section>
             <Project/>
         </section>
-      </div>
     </div>
   )
 }

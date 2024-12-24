@@ -22,7 +22,7 @@ const Skills = ({skills = [], text, seeMoreFeature = true}) => {
             skills.length > 0? (
             skills?.slice(0, seeMoreFeature? totalSkillToShow : skills.length)?.map(skill => (
                 <li 
-                className="mx-1 bg-gray-200 rounded px-1 text-sm"
+                className="mx-1 bg-slate-200 dark:bg-[#212121] rounded px-1 text-sm"
                 key={skill}>
                 {skill}
                 </li>
