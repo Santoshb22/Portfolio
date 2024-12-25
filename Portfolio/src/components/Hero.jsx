@@ -1,8 +1,6 @@
-import { data } from "../data/bioData"
-import { FaLinkedin } from "react-icons/fa";
-import { FaSquareGithub } from "react-icons/fa6";
 import profile from "../assets/profile.jpg";
 import heroImg from "../assets/hero_img.jpg";
+import SocialConnects from "./SocialConnects";
 const Hero = () => {
   return (
     <div className="flex items-center justify-center gap-4 py-32"
@@ -17,16 +15,10 @@ const Hero = () => {
             <img className="w-44 rounded-full" src={profile} alt="profile-img" />
         </div>
 
-        <div className="text-white">
-            <p>Lets Connect</p>
-            <div className="flex items-center gap-1 cursor-pointer">
-                <a href={data.socialLinks?.linkedin} target="blank">
-                    <FaLinkedin size={20}/>
-                </a>
-                <a href={data.socialLinks?.github} target="blank">
-                    <FaSquareGithub size={20}/>
-                </a>
-                <p className="text-blue-500 text-lg underline hover:text-blue-400">Resume</p>
+        <div className="text-white bg-black bg-opacity-20 rounded-md p-2">
+            <p className="font-semibold">Lets Connect</p>
+            <div>
+              <SocialConnects/>
             </div>
         </div>
     </div>

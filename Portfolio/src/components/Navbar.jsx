@@ -33,7 +33,7 @@ const Navbar = () => {
   }, [darkMode]);
 
   return (
-    <div className="dark:bg-[#212121] dark:text-white shadow-2xl border-b-black py-4 flex items-center justify-between px-4 font-semibold bg-white sticky w-full z-40 top-0">
+    <div className="dark:bg-[#212121] dark:text-white shadow-2xl border-b-black py-2 flex items-center justify-between px-4 font-semibold bg-white sticky w-full z-40 top-0">
       <div>
         <h1 className="text-xl">Santosh Bhardwaj</h1>
       </div>

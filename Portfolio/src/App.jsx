@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import "./App.css";
 import { useContext, useEffect } from "react";
 import { contactModal } from "./contextAPI/context";
+import Footer from "./components/Footer";
 
 function App() {
   const {showContactModal} = useContext(contactModal);
@@ -17,9 +18,7 @@ function App() {
     <main>
       <Outlet/>
     </main>
-    <header>
-      social icons here
-    </header>
+    <Footer/>
   </div>
   )
 }
