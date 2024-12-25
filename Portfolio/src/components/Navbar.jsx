@@ -1,13 +1,15 @@
 import { FiSun } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { PiCloudMoon } from "react-icons/pi";
 import Button from "./Button";
+import { contactModal } from "../contextAPI/context";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+  const {setShowContactModal} = useContext(contactModal);
   const navLinks = ["Home", "Projects", "Skills"];
 
   const handleMenu = () => {
@@ -56,7 +58,7 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <Button>
+            <Button onClick={() => setShowContactModal(true)}>
               Contact
             </Button>
           </li>

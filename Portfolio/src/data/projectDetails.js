@@ -25,7 +25,7 @@ export const projects = [
             },
             details: [
                 {
-                    id: "BuildXPenseTracker",
+                    id: "Build XPenseTracker",
                     title: "Build XPenseTracker",
                     scope: [
                         "Global State with Redux Toolkit: Used slices like userSlice, expenseSlice, and transactionSlice to manage user data, budgets, and transactions.",
@@ -61,7 +61,6 @@ export const projects = [
         img: qTify,
         link: "https://xpense-tracker-mu.vercel.app/",
         details: {
-            demo_link: "https://xpense-tracker-mu.vercel.app/",
             topic: ["Overview", "Build QTify"],
             overview: {
                 title: "QTify is a ReactJS-based song-browsing app with Material UI and Swiper, offering a smooth and stylish interface to explore songs by albums and genres.",
@@ -78,7 +77,7 @@ export const projects = [
             },
             details: [
                 {
-                    id: "BuildQTify",
+                    id: "Build QTify",
                     title: "Build QTify",
                     scope: [
                         "Analyzed the Figma design to identify and document necessary front-end components.",

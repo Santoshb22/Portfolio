@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import ProjectDetail from "./pages/ProjectDetail"
 import App from './App'
 import Home from './pages/Home'
+import AppProvider from './contextAPI/AppProvider'
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router}/>
+  <AppProvider>
+    <RouterProvider router={router}/>
+  </AppProvider>
   </StrictMode>
 )

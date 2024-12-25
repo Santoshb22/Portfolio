@@ -14,7 +14,6 @@ const ProjectDetail = () => {
   useEffect(() => {
     if(id) {
       const data = projects.find(project => project.id === id);
-      console.log(data);
       setProjectData(data);
       setLoading(false);
     } else {
@@ -30,7 +29,7 @@ const ProjectDetail = () => {
     if(!overview) return <p>No Overview</p>
 
     return (
-      <div id="overview" className="bg-[#F8FAFC] p-2 rounded-md shadow-md grid gap-3">
+      <div id="overview" className="dark:bg-[#323232] dark:text-white  bg-[#F8FAFC] p-2 rounded-md shadow-md grid gap-3">
         <h3 className="text-2xl font-semibold">Overview</h3>
         <p>{overview.title}</p>
         <Skills skills={projectData.skills} text = {"Skills"}/>
@@ -56,7 +55,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="bg-[#F6F5F2]">
+    <div className="bg-[#F6F5F2] dark:bg-[#212121] dark:text-white">
       <ProjectDetailHeader data={projectData} />
       {loading ? (
         <h1 className="text-center content-center h-[80vh] text-3xl font-semibold">
