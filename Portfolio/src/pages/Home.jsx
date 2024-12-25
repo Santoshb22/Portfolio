@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
         <Navbar/>
-          <div className='dark:bg-[#323232] dark:text-white p-2 bg-[#F8FAFC] max-w-full w-[80%] mx-auto'>
+          <div className='dark:bg-[#323232] dark:text-white p-2 bg-[#F8FAFC] max-w-full w-[100%] md:w-[90%] mx-auto'>
             <section>
                 <HomeSection/>
             </section>

@@ -1,6 +1,9 @@
 import { useState } from "react"
 import { projects } from "../../data/shortProjectData"
 import ProjectCard from "./ProjectCard"
+import { CiCircleChevRight } from "react-icons/ci";
+import { CiCircleChevLeft } from "react-icons/ci";
+
 
 const ProjectCarousel = ({isCarousel}) => {
   const [index, setIndex] = useState(0);
@@ -16,12 +19,7 @@ const ProjectCarousel = ({isCarousel}) => {
 
   console.log(index);
   return (
-    <div className={`grid gap-4 ${isCarousel && " grid-cols-[5%_90%_5%]"} `}>
-
-      {isCarousel && <button 
-        onClick={handlePrevBtn}
-        className="dark:bg-[#212121] hover:bg-gray-50 rounded-md text-4xl bg-gray-100">{"<"}
-        </button>}
+    <div>
 
         {isCarousel? 
           (<div>
@@ -37,11 +35,20 @@ const ProjectCarousel = ({isCarousel}) => {
           )
         }
 
-        {isCarousel && <button 
-        onClick={handleNextBtn}
-        className="dark:bg-[#212121] rounded-md hover:bg-gray-50 text-4xl bg-gray-100">
-          {">"}
-        </button>}
+        {
+        isCarousel && <div className="text-center">
+          <button 
+          onClick={handlePrevBtn}
+          className="dark:bg-[#212121] dark:hover:bg-[#1E2022] rounded-md hover:bg-gray-50 text-4xl px-4 py-2 mr-2 bg-gray-100">
+            <CiCircleChevLeft/>
+          </button>
+          <button 
+          onClick={handleNextBtn}
+          className="dark:bg-[#212121] dark:hover:bg-[#1E2022] rounded-md hover:bg-gray-50 text-4xl px-4 py-2 bg-gray-100">
+            <CiCircleChevRight/>
+          </button>
+        </div>
+        }
     </div>
   )
 }

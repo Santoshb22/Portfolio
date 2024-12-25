@@ -3,7 +3,7 @@ import Skills from "./Skills";
 const SkillsSection = () => {
   return (
     <div id="skills">
-        <h2 className="text-3xl font-semibold my-2">Skills</h2>
+        <h2 className="text-lg md:text-3xl font-semibold my-2">Skills</h2>
 
         <div>
             <div className="skills">

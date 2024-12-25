@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react"
 import ProjectCarousel from "./ProjectCarousel"
+import Button from "../Button";
 
 const Project = () => {
   const [isCarousel, setIsCarousel] = useState(true);
@@ -9,14 +10,14 @@ const Project = () => {
   }, [isCarousel]);
 
   return (
-    <div id="projects" className="my-10 mr-8">
-        <div className="flex items-end justify-between">
-        <h2 className="text-4xl font-semibold mb-4">Projects</h2>
-        <button
+    <div id="projects" className="my-5 md:my-10">
+        <div className="flex items-end justify-between mr-2">
+        <h2 className=" text-lg md:text-3xl font-semibold mb-4">Projects</h2>
+        <Button
         onClick={handleCarousel}
         >
           {isCarousel? "See All" : "Collapse"}
-        </button>
+        </Button>
         </div>
         <ProjectCarousel isCarousel = {isCarousel}/>
     </div>

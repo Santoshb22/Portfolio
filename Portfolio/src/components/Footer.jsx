@@ -10,7 +10,7 @@ const Footer = () => {
        
         <div>
             <p className="my-2">Contact Details</p>
-            <ul className="text-gray-300">
+            <ul className="text-gray-300 text-xs sm:text-sm">
                 <li>9082190902</li>
                 <li>bhardwajsantosh148@gmail.com</li>
             </ul>

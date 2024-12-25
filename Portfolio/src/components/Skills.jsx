@@ -16,13 +16,13 @@ const Skills = ({skills = [], text, seeMoreFeature = true}) => {
 
   return (
     <div>
-        <p className="font-medium">{text}: </p>
+        <p className="font-medium text-sm md:text-lg ">{text}: </p>
         <ul className="flex flex-wrap gap-2">
         {
             skills.length > 0? (
             skills?.slice(0, seeMoreFeature? totalSkillToShow : skills.length)?.map(skill => (
                 <li 
-                className="mx-1 bg-slate-200 dark:bg-[#212121] rounded px-1 text-sm"
+                className="mx-1 bg-slate-200 dark:bg-[#212121] rounded px-1 text-xs md:text-sm"
                 key={skill}>
                 {skill}
                 </li>
