@@ -27,7 +27,7 @@ export const projects = [
         link: "https://qtify-steel-five.vercel.app/"
     },
     {
-        id: "project3",
+        id: "projectjul24",
         project_name: "QKart Frontend",
         date: "Jul 2024",
         title: "QKart is an e-commerce application offering a variety of products for customers to choose from.",
@@ -60,7 +60,7 @@ export const projects = [
         link: "https://qkart-frontend-eta-sable.vercel.app/"
     },
     {
-        id: "project4",
+        id: "projectJun24",
         project_name: "XBoard",
         date: "Jun 2024",
         title: "XBoard is a News Feed website that will feature the latest news for select topics, from Flipboard.",
@@ -87,7 +87,7 @@ export const projects = [
         link: "https://xboard-newsfeed.vercel.app/"
     },
     {
-        id: "project5",
+        id: "projectnov242",
         project_name: "QTrip Dynamic",
         date: "Jun 2024",
         title: "QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities.",

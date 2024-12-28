@@ -1,4 +1,5 @@
-
+import Skills from "../Skills";
+import ProductImage from "./ProductImage";
 const ProjectDetailCard = ({data}) => {
   return (
     <div id={data.id.toLowerCase()} className="dark:bg-[#323232] dark:text-white my-4 bg-[#F8FAFC] p-2 rounded-md shadow-md grid gap-3">
@@ -20,6 +21,18 @@ const ProjectDetailCard = ({data}) => {
                     ))
                 }
             </ol>
+        </div>
+
+        <div>
+            <Skills skills={data.skills} text={"Skills"}/>
+        </div>
+
+        <div>
+            {
+                data.images?.map(data => (
+                <ProductImage key={data.title} data = {data}/>
+                ))
+            }
         </div>
     </div>
   )

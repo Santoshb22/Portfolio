@@ -4,7 +4,7 @@ import Button from "../Button";
 const ProjectDetailHeader = ({data}) => {
   if(!data) return;
   return (
-    <div className=" bg-white dark:bg-[#212121] dark:text-white h-12 shadow-md overflow-hidden sticky top-0 flex items-center px-5 md:px-20 justify-between">
+    <div className=" bg-white dark:bg-[#212121] dark:text-white h-16 shadow-md overflow-hidden sticky top-0 flex items-center px-5 md:px-20 justify-between">
       <div>
         <h3 className="text-xl font-semibold">
           {data.project_name}

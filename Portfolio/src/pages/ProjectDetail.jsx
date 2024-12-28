@@ -4,7 +4,8 @@ import {projects} from "../data/projectDetails";
 import ProjectDetailHeader from "../components/ProjectDetails/ProjectDetailHeader";
 import ProjectDetailCard from "../components/ProjectDetails/ProjectDetailCard";
 import Skills from "../components/Skills";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import ProductImage from "../components/ProjectDetails/ProductImage";
+import ProjectSidebar from "../components/ProjectDetails/ProjectSidebar";
 
 const ProjectDetail = () => {
   const [projectData, setProjectData] = useState(null);
@@ -50,6 +51,13 @@ const ProjectDetail = () => {
         <div>
           <img className="h-[25vw] w-[45vw] rounded-md" src={projectData.img} alt="project img" />
         </div>
+        <div>
+          {
+            overview.images?.map(data => (
+              <ProductImage key={data.title} data={data}/>
+            ))
+          }
+        </div>
       </div>
     );
   }
@@ -66,20 +74,10 @@ const ProjectDetail = () => {
           Project data not available
         </h1>
       ) : ( //sidebar
-        <div className="flex mx-20 min-h[100vh] my-4">
-          <div className="md:w-[22%] fixed">
-            {projectData.details?.topic?.map((topic) => (
-              <AnchorLink 
-              offset={50} 
-              href={`#${topic.toLowerCase()}`} 
-              key={topic} 
-              className="block mb-4">
-                {topic}
-              </AnchorLink>
-            ))}
-          </div>
+        <div className="md:flex mx-4 md:mx-20 min-h[100vh] my-4">
+          <ProjectSidebar projectData = {projectData}/>
 
-          <div className="ml-[22%]">
+          <div className="md:ml-[25%]">
             {overViewJSX()}
             <div>
               {projectData.details?.details?.map((data) => (
